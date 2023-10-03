@@ -3,9 +3,9 @@ export default function cleanSet(set, startString) {
   if (startString === '') return '';
   set.forEach((val) => {
     if (val.startsWith(startString)) {
-      res += val.slice(startString.length, -1);
+      res += val.slice(startString.length, val.length);
       res += '-';
     }
   });
-  return res.slice(0, -2);
+  return res.slice(0, -1)
 }
