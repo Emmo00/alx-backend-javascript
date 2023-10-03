@@ -7,5 +7,5 @@ export default function cleanSet(set, startString) {
       res += '-';
     }
   });
-  return res.slice(0, -1)
+  return res.slice(0, -1);
 }
