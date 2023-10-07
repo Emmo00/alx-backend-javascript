@@ -1,4 +1,9 @@
+# test files
 test.js
+main.py
+
+# python ignores
+__pycache__
 
 # Logs
 logs
