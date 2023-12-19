@@ -1,6 +1,7 @@
 # test files
 test.js
 main.py
+main.js
 
 # python ignores
 __pycache__
