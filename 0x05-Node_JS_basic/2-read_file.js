@@ -21,7 +21,7 @@ function countStudents(path) {
   process.stdout.write(`Number of students: ${lines.length}\n`);
   for (const field of Object.keys(fields)) {
     process.stdout.write(
-      `Number of students in ${field}. List: ${fields[field].join(', ')}\n`
+      `Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}\n`
     );
   }
   return;
