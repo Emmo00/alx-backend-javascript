@@ -1,11 +1,11 @@
 const fs = require('fs');
 
-function countStudents(path) {
+function countStudents (path) {
   if (!fs.existsSync(path)) {
     throw new Error('Cannot load the database');
   }
   const file = fs.readFileSync(path);
-  let lines = file.toString().trim().split('\n').slice(1);
+  const lines = file.toString().trim().split('\n').slice(1);
   const fields = {};
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].length < 1) {
@@ -31,7 +31,6 @@ function countStudents(path) {
       ].join(', ')}`
     );
   }
-  return;
 }
 
 module.exports = countStudents;
