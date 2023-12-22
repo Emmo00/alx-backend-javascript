@@ -39,7 +39,7 @@ function countStudents(path) {
         report.push(
           `Number of students in ${field}: ${
             fields[field].length
-          }. List: ${fields[field].join(', ')}`
+          }. List: ${fields[field].join(', ')}`,
         );
       }
       resolve(report.join('\n'));
