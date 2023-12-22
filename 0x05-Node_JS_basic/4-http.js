@@ -5,3 +5,5 @@ const app = http.createServer((req, res) => {
 });
 
 app.listen(1245, '0.0.0.0');
+
+module.exports = app;
