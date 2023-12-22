@@ -23,12 +23,12 @@ function countStudents(path) {
       fields[field].push(name);
     }
   }
-  process.stdout.write(`Number of students: ${lines.length}\n`);
+  console.log(`Number of students: ${lines.length}`);
   for (const field of Object.keys(fields)) {
-    process.stdout.write(
+    console.log(
       `Number of students in ${field}: ${fields[field].length}. List: ${fields[
         field
-      ].join(', ')}\n`
+      ].join(', ')}`
     );
   }
   return;
